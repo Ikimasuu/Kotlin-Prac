@@ -23,7 +23,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/tvAddress"
+            android:id="@+id/edittextAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -37,7 +37,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/tvPrice"
+            android:id="@+id/edittextPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -51,7 +51,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/tvType"
+            android:id="@+id/edittextType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -65,7 +65,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/tvSqft"
+            android:id="@+id/edittextSqft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -79,7 +79,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/tvBedrooms"
+            android:id="@+id/edittextBedrooms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"

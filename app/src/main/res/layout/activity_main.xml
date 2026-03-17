@@ -14,21 +14,21 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etUsername"
+        android:id="@+id/edittextUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/edittextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login" />

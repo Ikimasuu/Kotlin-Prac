@@ -1,38 +1,38 @@
 package com.example.challenge
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 
-class SecondActivity : AppCompatActivity() {
+class SecondActivity : Activity() {
 
-    private lateinit var etAddress: EditText
-    private lateinit var etPrice: EditText
-    private lateinit var etType: EditText
-    private lateinit var etSqft: EditText
-    private lateinit var etBedrooms: EditText
-    private lateinit var btnSave: Button
+    private lateinit var edittextAddress: EditText
+    private lateinit var edittextPrice: EditText
+    private lateinit var edittextType: EditText
+    private lateinit var edittextSqft: EditText
+    private lateinit var edittextBedrooms: EditText
+    private lateinit var buttonSave: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        etAddress = findViewById(R.id.etAddress)
-        etPrice = findViewById(R.id.etPrice)
-        etType = findViewById(R.id.etType)
-        etSqft = findViewById(R.id.etSqft)
-        etBedrooms = findViewById(R.id.etBedrooms)
-        btnSave = findViewById(R.id.btnSave)
+        edittextAddress = findViewById(R.id.edittextAddress)
+        edittextPrice = findViewById(R.id.edittextPrice)
+        edittextType = findViewById(R.id.edittextType)
+        edittextSqft = findViewById(R.id.edittextSqft)
+        edittextBedrooms = findViewById(R.id.edittextBedrooms)
+        buttonSave = findViewById(R.id.buttonSave)
 
-        btnSave.setOnClickListener {
-            val address = etAddress.text.toString().trim()
-            val price = etPrice.text.toString().trim()
-            val type = etType.text.toString().trim()
-            val sqft = etSqft.text.toString().trim()
-            val bedrooms = etBedrooms.text.toString().trim()
+        buttonSave.setOnClickListener {
+            val address = edittextAddress.text.toString().trim()
+            val price = edittextPrice.text.toString().trim()
+            val type = edittextType.text.toString().trim()
+            val sqft = edittextSqft.text.toString().trim()
+            val bedrooms = edittextBedrooms.text.toString().trim()
 
             if (address.isEmpty() || price.isEmpty() || type.isEmpty() || sqft.isEmpty() || bedrooms.isEmpty()) {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()

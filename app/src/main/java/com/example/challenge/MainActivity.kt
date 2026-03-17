@@ -1,29 +1,29 @@
 package com.example.challenge
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
-    private lateinit var etUsername: EditText
-    private lateinit var etPassword: EditText
-    private lateinit var btnLogin: Button
+    private lateinit var edittextUsername: EditText
+    private lateinit var edittextPassword: EditText
+    private lateinit var buttonLogin: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        etUsername = findViewById(R.id.etUsername)
-        etPassword = findViewById(R.id.etPassword)
-        btnLogin = findViewById(R.id.btnLogin)
+        edittextUsername = findViewById(R.id.edittextUsername)
+        edittextPassword = findViewById(R.id.edittextPassword)
+        buttonLogin = findViewById(R.id.buttonLogin)
 
-        btnLogin.setOnClickListener {
-            val username = etUsername.text.toString().trim()
-            val password = etPassword.text.toString().trim()
+        buttonLogin.setOnClickListener {
+            val username = edittextUsername.text.toString().trim()
+            val password = edittextPassword.text.toString().trim()
 
             if (username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()

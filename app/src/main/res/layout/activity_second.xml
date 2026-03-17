@@ -17,42 +17,42 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/etAddress"
+            android:id="@+id/edittextAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Property Address"
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/etPrice"
+            android:id="@+id/edittextPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Price"
             android:inputType="numberDecimal" />
 
         <EditText
-            android:id="@+id/etType"
+            android:id="@+id/edittextType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Type (e.g. Condo, House)"
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/etSqft"
+            android:id="@+id/edittextSqft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Square Footage"
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/etBedrooms"
+            android:id="@+id/edittextBedrooms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Number of Bedrooms"
             android:inputType="number" />
 
         <Button
-            android:id="@+id/btnSave"
+            android:id="@+id/buttonSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save" />

@@ -1,26 +1,26 @@
 package com.example.challenge
 
+import android.app.Activity
 import android.os.Bundle
 import android.widget.EditText
-import androidx.appcompat.app.AppCompatActivity
 
-class ThirdActivity : AppCompatActivity() {
+class ThirdActivity : Activity() {
 
-    private lateinit var tvAddress: EditText
-    private lateinit var tvPrice: EditText
-    private lateinit var tvType: EditText
-    private lateinit var tvSqft: EditText
-    private lateinit var tvBedrooms: EditText
+    private lateinit var edittextAddress: EditText
+    private lateinit var edittextPrice: EditText
+    private lateinit var edittextType: EditText
+    private lateinit var edittextSqft: EditText
+    private lateinit var edittextBedrooms: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
-        tvAddress = findViewById(R.id.tvAddress)
-        tvPrice = findViewById(R.id.tvPrice)
-        tvType = findViewById(R.id.tvType)
-        tvSqft = findViewById(R.id.tvSqft)
-        tvBedrooms = findViewById(R.id.tvBedrooms)
+        edittextAddress = findViewById(R.id.edittextAddress)
+        edittextPrice = findViewById(R.id.edittextPrice)
+        edittextType = findViewById(R.id.edittextType)
+        edittextSqft = findViewById(R.id.edittextSqft)
+        edittextBedrooms = findViewById(R.id.edittextBedrooms)
 
         val address = intent.getStringExtra("address") ?: "N/A"
         val price = intent.getStringExtra("price") ?: "N/A"
@@ -28,10 +28,10 @@ class ThirdActivity : AppCompatActivity() {
         val sqft = intent.getStringExtra("sqft") ?: "N/A"
         val bedrooms = intent.getStringExtra("bedrooms") ?: "N/A"
 
-        tvAddress.setText(address)
-        tvPrice.setText(price)
-        tvType.setText(type)
-        tvSqft.setText(sqft)
-        tvBedrooms.setText(bedrooms)
+        edittextAddress.setText(address)
+        edittextPrice.setText(price)
+        edittextType.setText(type)
+        edittextSqft.setText(sqft)
+        edittextBedrooms.setText(bedrooms)
     }
 }
