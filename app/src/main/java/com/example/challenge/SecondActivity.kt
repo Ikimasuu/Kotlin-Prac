@@ -8,24 +8,16 @@ import android.widget.EditText
 import android.widget.Toast
 
 class SecondActivity : Activity() {
-
-    private lateinit var edittextAddress: EditText
-    private lateinit var edittextPrice: EditText
-    private lateinit var edittextType: EditText
-    private lateinit var edittextSqft: EditText
-    private lateinit var edittextBedrooms: EditText
-    private lateinit var buttonSave: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        edittextAddress = findViewById(R.id.edittextAddress)
-        edittextPrice = findViewById(R.id.edittextPrice)
-        edittextType = findViewById(R.id.edittextType)
-        edittextSqft = findViewById(R.id.edittextSqft)
-        edittextBedrooms = findViewById(R.id.edittextBedrooms)
-        buttonSave = findViewById(R.id.buttonSave)
+        val edittextAddress = findViewById<EditText>(R.id.edittextAddress)
+        val edittextPrice = findViewById<EditText>(R.id.edittextPrice)
+        val edittextType = findViewById<EditText>(R.id.edittextType)
+        val edittextSqft = findViewById<EditText>(R.id.edittextSqft)
+        val edittextBedrooms = findViewById<EditText>(R.id.edittextBedrooms)
+        val buttonSave = findViewById<Button>(R.id.buttonSave)
 
         buttonSave.setOnClickListener {
             val address = edittextAddress.text.toString().trim()

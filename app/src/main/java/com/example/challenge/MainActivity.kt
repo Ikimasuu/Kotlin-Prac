@@ -8,18 +8,13 @@ import android.widget.EditText
 import android.widget.Toast
 
 class MainActivity : Activity() {
-
-    private lateinit var edittextUsername: EditText
-    private lateinit var edittextPassword: EditText
-    private lateinit var buttonLogin: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        edittextUsername = findViewById(R.id.edittextUsername)
-        edittextPassword = findViewById(R.id.edittextPassword)
-        buttonLogin = findViewById(R.id.buttonLogin)
+        val edittextUsername = findViewById<EditText>(R.id.edittextUsername)
+        val edittextPassword = findViewById<EditText>(R.id.edittextPassword)
+        val buttonLogin = findViewById<Button>(R.id.buttonLogin)
 
         buttonLogin.setOnClickListener {
             val username = edittextUsername.text.toString().trim()
